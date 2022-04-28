@@ -134,7 +134,7 @@
     .slick-current.slick-center .slider-icon-img .active-icon {
       display: block;
     }
-   </style>
+  </style>
 
   <body>
     <!-- desktop navigation bar -->
@@ -147,9 +147,7 @@
         </a>
       </div>
       <ul class="desktop-nav-menu text-white uppercase flex gap-x-12 hidde n">
-        <li
-          class="hover:text-gold text-gold transition-all duration-300 tracking-[3px]"
-        >
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
           <a href="./about.html"> About Us </a>
         </li>
 
@@ -262,7 +260,7 @@
     </nav>
     <div
       id="menu_options"
-      class="mobile-nav myContainer opacity-0 absolute z-[30] translate-y-[-100vh]"
+      class="mobile-nav myContainer opacity-0 fixed z-[30] translate-y-[-100vh]"
     >
       <div class="w-full h-full absolute top-0 left-0 z-[-1]">
         <span
@@ -278,13 +276,13 @@
         class="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] mt-[108px] w-[100%]"
       >
         <li
-          class="text-[25px] hover:text-gold text-gold transition-all duration-300 leading-[70px] tracking-[5px]"
+          class="text-[25px] hover:text-gold transition-all duration-300 leading-[70px] tracking-[5px]"
         >
           <a href="./about.html"> About Us </a>
         </li>
         <li onclick="openDropdownMenu()" class="relative dropdownB tn">
           <span
-            class="text-[25px] cursor-pointer leading-[70px] tracking-[5px] flex gap-x-[5px] transition-all duration-300"
+            class="text-[25px] cursor-pointer leading-[70px] tracking-[5px] flex gap-x-[5px] transition-all duration-300 justify-between"
           >
             Functions
             <img
@@ -765,22 +763,26 @@
               <div
                 class="flex items-center w-[140px] top-[3px] tabsHeaderButton3"
               >
-              <div class="slider-icon-img">
-                <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
-                  <img
-                    src="./assets/images/svg/settings-white.svg"
-                    class="w-[100%] max-h-[32px]"
-                    alt="Compliance"
-                  />
+                <div class="slider-icon-img">
+                  <div
+                    class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
+                    <img
+                      src="./assets/images/svg/settings-white.svg"
+                      class="w-[100%] max-h-[32px]"
+                      alt="Compliance"
+                    />
+                  </div>
+                  <div
+                    class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
+                    <img
+                      src="./assets/images/svg/settings.svg"
+                      class="w-[100%] max-h-[32px]"
+                      alt="Third Party "
+                    />
+                  </div>
                 </div>
-                <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"> 
-                  <img
-                    src="./assets/images/svg/settings.svg"
-                    class="w-[100%] max-h-[32px]"
-                    alt="Third Party "
-                  />
-                </div> 
-              </div> 
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -792,24 +794,27 @@
             <!-- slick-current slick-center -->
             <div class="">
               <div class="flex items-center w-[140px] tabsHeaderButton3">
-
                 <div class="slider-icon-img">
-                  <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"> 
-                  <img
-                    src="./assets/images/svg/management-white.svg"
-                    class="w-[100%] max-h-[32px]"
-                    alt="Third Party"
-                  />
-                  </div> 
-                  <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"> 
+                  <div
+                    class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
+                    <img
+                      src="./assets/images/svg/management-white.svg"
+                      class="w-[100%] max-h-[32px]"
+                      alt="Third Party"
+                    />
+                  </div>
+                  <div
+                    class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
                     <img
                       src="./assets/images/svg/thirdparty.svg"
                       class="w-[100%] max-h-[32px]"
                       alt="Third Party"
                     />
-                  </div> 
+                  </div>
                 </div>
-                
+
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -823,22 +828,26 @@
               <div
                 class="flex items-center w-[140px] top-[3px] z-[5] tabsHeaderButton3"
               >
-              <div class="slider-icon-img">
-              <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"> 
-                <img
-                  src="./assets/images/svg/risk-white.svg"
-                  class="w-[100%] max-h-[32px]"
-                  alt="Risk"
-                />
-              </div>
-              <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"> 
-                <img
-                  src="./assets/images/svg/risk.svg"
-                  class="w-[100%] max-h-[32px]"
-                  alt="Third Party "
-                />
-              </div> 
-            </div>
+                <div class="slider-icon-img">
+                  <div
+                    class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
+                    <img
+                      src="./assets/images/svg/risk-white.svg"
+                      class="w-[100%] max-h-[32px]"
+                      alt="Risk"
+                    />
+                  </div>
+                  <div
+                    class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
+                  >
+                    <img
+                      src="./assets/images/svg/risk.svg"
+                      class="w-[100%] max-h-[32px]"
+                      alt="Third Party "
+                    />
+                  </div>
+                </div>
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -997,7 +1006,7 @@
 
     <footer>
       <div
-        class="bg-saint border-t-[6px] border-gold text-[18] flex items-center items-center sm:gap-x-[47px] sm:py-[35px] sm:px-[60px] sm:py-[30px]      pb-[30px] pt-[25px] px-[25px] gap-x-[0]"
+        class="bg-saint border-t-[6px] border-gold text-[18] flex items-center items-center sm:gap-x-[47px] sm:py-[35px] sm:px-[60px] sm:py-[30px] pb-[30px] pt-[25px] px-[25px] gap-x-[0]"
       >
         <div class="footer-logo-div">
           <img
@@ -1022,7 +1031,9 @@
                 >Governance, Risk and Compilance</a
               >
             </li>
-            <li class="funcs text-left w-[185px] mr-[92px] pb-[13px] md:order-2 order-3">
+            <li
+              class="funcs text-left w-[185px] mr-[92px] pb-[13px] md:order-2 order-3"
+            >
               <a
                 href="./response.html"
                 class="brown-light sm:text-[17px] sm:leading-[20px] hover:text-gold trasition-all duration-300 text-[13px] leading-[15px]"
@@ -1043,7 +1054,9 @@
                 >Engineering and Architecture</a
               >
             </li>
-            <li class="funcs text-left w-[182px] mr-[95px] pb-[13px] md:order-5 order-4">
+            <li
+              class="funcs text-left w-[182px] mr-[95px] pb-[13px] md:order-5 order-4"
+            >
               <a
                 href="./operational.html"
                 class="brown-light sm:text-[17px] sm:leading-[20px] hover:text-gold trasition-all duration-300 text-[13px] leading-[15px]"
@@ -1108,7 +1121,7 @@
         </div>
       </div>
       <div
-        class="w-[100%] h-[25px] bg-[#B89535] text-center flex justify-center items-center md:hidden        block"
+        class="w-[100%] h-[25px] bg-[#B89535] text-center flex justify-center items-center md:hidden block"
       >
         <p class="brown-light text-[8px] text-[#ffffffd4]">
           Copyright 2022 <strong>NEOM</strong> All Rights Reserved. Designed and

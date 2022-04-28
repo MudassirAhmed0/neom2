@@ -1094,3 +1094,40 @@ margin-top: -1910px!important;
 
  }
 
+ .inline_im {
+    display: inline !important;
+}
+
+.chevron-right {
+    transition: all .3s ease;
+}
+
+.homeCarousel .item:hover .chevron-right {
+    margin-left: 5px !important;
+}
+@media (max-width: 768px) {
+  .fuelled-div {
+    padding: 0;
+  }
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  .all-functions-div {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .myCarousel.blue-slider-div {
+    margin-top: 190px;
+  }
+}
+@media(max-width:1100px) {
+  .sheild-svg {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 880px) {
+  .all-functions-div .chevron-right-icon {
+    margin-right: 30px;
+  }
+}
