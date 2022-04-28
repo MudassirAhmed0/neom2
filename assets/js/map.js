@@ -1,16 +1,8 @@
 function myMap() {
-    let center ;
-    if(window.innerWidth < 1024){
-        center =new google.maps.LatLng(28.111555, 35.109533)
-    } else{
-        center =new google.maps.LatLng(28.113021, 35.107412)
-    }
     var mapProp = { 
-        // center: new google.maps.LatLng(28.113021, 35.107412),
-        center:center ,
+        center: new google.maps.LatLng(28.113021, 35.107412),
         // center: { lat: 28.739279, lng: 35.25263 },
-        // zoom: 17.5,
-        zoom: window.innerWidth < 1024? 17.9 :17.5,
+        zoom: 17.5,
         disableDefaultUI: true,
         draggable: false, 
         zoomControl: false,

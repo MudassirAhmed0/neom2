@@ -514,7 +514,7 @@ input[type=number] {
     background-color: #B89535b5;
 }
 /* burger menu styles start */
-#toggle {
+#toggle, #toggle_home {
     position: relative;
     width: 50px;
     height: 50px;
@@ -527,7 +527,7 @@ input[type=number] {
     right: -11px;
 }
 
-#toggle::before {
+#toggle::before, #toggle_home::before {
     content: "";
     position: absolute;
     width: 28px;
@@ -538,7 +538,7 @@ input[type=number] {
     box-shadow: 0 10px 0 #fff;
 }
 
-#toggle::after {
+#toggle::after, #toggle_home::after {
     content: "";
     position: absolute;
     width: 28px;
@@ -548,12 +548,12 @@ input[type=number] {
     transform: translateY(10px);
 }
 
-#toggle.active::before {
+#toggle.active::before, #toggle_home::before {
     transform: translateY(0px) rotate(-45deg);
     box-shadow: 0 0 0 #fff;
 }
 
-#toggle.active:after {
+#toggle.active:after, #toggle_home:after {
     transform: translateY(0px) rotate(45deg);
 }
 
@@ -565,10 +565,12 @@ input[type=number] {
 
 .show-dropdown {
     opacity: 1 !important;
-    max-height: 300px !important;
-    pointer-events: initial;
+    height: auto !important;
 }
 
+#divisionDropDown {
+    overflow: hidden;
+}
 /* footer style start */
   div ul li.sitemap-li {
     max-width: 22% !important;
@@ -673,7 +675,8 @@ input[type=number] {
     }
 
     .rightEdge {
-        min-width: 376px;
+        /* min-width: 376px; */
+        min-width: 200px;
     }
     .rightEdge.overlay-div {
         min-width: 200px;
@@ -687,6 +690,11 @@ input[type=number] {
     .img_container img.bgimg {
         object-fit: contain;
         position: absolute;
+        top: -200px;
+    }
+    .img_container img.bgimg2 {
+        object-fit: contain;
+        position: absolute;
         top: -280px;
     }
 }
@@ -696,3 +704,393 @@ input[type=number] {
         padding-right: 30px;
     }
 }
+@media (max-width: 768px) {
+    .homeCarousel .slick-slide {
+        margin-right: 10px;
+        height: 273px !important;
+    }
+}
+@media (max-width: 560px) {
+    .homeCarousel .slick-slide {
+        height: 173px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1440px){
+    .myMax{
+        max-width: 1200px!important;
+    }
+        .myCont{
+    width: 1200px!important;
+        }
+    
+        .slide1{
+            left: 266px!important;
+            top: 224px!important;
+        }
+        .slide2{
+            left: 455px!important;
+            top: 291px!important;
+        }
+        
+        
+        .slide3{
+            left: 645px!important;
+            top: 291px!important;
+        
+        }
+        .slide4{
+            right: 262px!important;
+            top: 228px!important;
+    }
+    } 
+
+@media(max-width:1200px){
+    .myMax{
+        max-width: 1000px!important;
+    }
+    .myCont{
+width: 1000px!important;
+margin-top: -1700px!important;
+    }
+    .myFonts{
+        font-size: 30px!important;
+        line-height: 36px !important;
+        letter-spacing: 5px!important;
+    }
+    .myPadding{
+        padding: 1.5rem,0.2rem!important;
+
+        }
+    .slide1{
+        left: 203px!important;
+        top: 185px!important;
+    }
+    .slide2{
+        left: 358px!important;
+        top: 244px!important;
+    }
+    .slide3{
+        left: 527px!important;
+        top: 246px!important;
+    }
+    
+    .slide4{
+        right: 216px!important;
+        top: 193px!important;
+}
+}
+
+@media(max-width:1024px){
+    .myBorder::after{
+        content: '';
+        position: absolute;
+        width: 220%;
+        bottom: -20px;
+        border: #c3bbbb 0.5px solid;
+      }
+}
+
+@media(max-width:1000px){
+    .myMax{
+        max-width: 800px!important;
+    }
+    .myCont{
+width: 800px!important;
+margin-top: -1770px!important;
+    }
+    .myFonts{
+        font-size: 28px!important;
+        line-height: 36px !important;
+        letter-spacing: 4px!important;
+    }
+    .myPadding{
+        padding-top: 2.8rem!important;
+padding-left: 0.2rem!important;
+padding-right: 0.2rem!important;
+        }
+    .slide1{
+        left: 185px!important;
+    top: 150px!important;
+        width: 75px!important;
+        height: 75px!important;
+        font-size: 35px!important;
+    }
+    .slide2{
+      
+    left: 308px!important;
+    top: 195px!important;
+
+        width: 75px!important;
+        height: 75px!important;
+        font-size: 35px!important;
+    }
+    .slide3{
+        left: 417px!important;
+        top: 197px!important;
+    
+        width: 75px!important;
+        height: 75px!important;
+        font-size: 35px!important;
+    }
+    
+    .slide4{
+      
+    right: 190px!important;
+    top: 157px!important;
+
+        width: 75px!important;
+        height: 75px!important;
+        font-size: 35px!important;
+}
+}
+
+
+
+/* 
+ @media(max-width:900px){
+    .myMax{
+        max-width: 769px!important;
+    }
+    .myFont{
+        font-size: 35px!important;
+    }
+    .myCont{
+width: 769px!important;
+
+
+    }
+    .slide1{
+        left: 135px!important;
+        top: 239px!important;    
+    }
+    .slide2{
+        left: 282px!important;
+        top: 295px!important;
+    }
+    .slide3{
+        left: 424px!important;
+        top: 290px!important;
+    }
+    
+    .slide4{
+        right: 109px!important;
+        top: 231px!important;
+}
+
+
+ } */
+ 
+ @media(max-width:800px){
+    .myMax{
+        max-width: 600px!important;
+    }
+    .myMax .slide span{
+        width: 100%;
+    }
+    .myFonts{
+        font-size: 16px!important;
+        line-height: 24px !important;
+    }
+    .myMax .myCarousel{
+        margin-top: 140px!important;
+    } 
+    
+    .myCont{
+width: 600px!important;
+margin-top: -1850px!important;
+
+    }
+    .myPadding{
+    padding-top: 2rem!important;
+    }
+    .slide1{
+        left: 123px!important;
+    top: 80px!important;
+        width: 60px!important;
+        height: 60px!important;
+        font-size: 22px!important;
+    }
+    .slide2{
+        left: 205px!important;
+        top: 117px!important;
+    
+        width: 60px!important;
+        height: 60px!important;
+        font-size: 22px!important;
+    }
+    .slide3{
+    
+        left: 301px!important;
+        top: 118px!important;
+    
+    width: 60px!important;
+    height: 60px!important;
+    font-size: 22px!important;
+    
+    }
+    
+    .slide4{
+        right: 148px!important;
+    top: 93px!important;
+
+        width: 60px!important;
+        height: 60px!important;
+        font-size: 22px!important;
+}
+
+
+ }
+
+
+
+ @media(max-width:600px){
+    .myMax{
+        max-width: 400px!important;
+    }
+    .myMax .slide span{
+        width: 100%;
+        max-width: 230px;
+    }
+    .myFonts{
+        font-size: 10px!important;
+    line-height: 15px !important;
+    letter-spacing: 2px!important;
+    }
+    
+    .myMax .myCarousel{
+        margin-top: 110px!important;
+    } 
+    .myCont{
+width: 400px!important;
+margin-top: -1900px!important;
+
+    }
+    .myPadding{
+    padding-top: 1rem!important;
+    }
+    .slide1{
+        left: 78px!important;
+        top: 48px!important;
+        width: 45px!important;
+        height: 45px!important;
+        font-size: 18px!important;
+    }
+    .slide2{
+        left: 139px!important;
+    top: 74px!important;
+        width: 45px!important;
+        height: 45px!important;
+        font-size: 18px!important;
+    }
+    .slide3{
+    
+       
+        left: 198px!important;
+    top: 75px!important;
+        width: 45px!important;
+        height: 45px!important;
+        font-size: 18px!important;
+    
+    }
+    
+    .slide4{
+        right: 93px!important;
+        top: 56px!important;
+        width: 45px!important;
+        height: 45px!important;
+        font-size: 18px!important;
+}
+
+
+ }
+
+ 
+ @media(max-width:460px){
+    .myMax{
+        max-width: 400px!important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .myMax .slide span{
+        width: 100%;
+    }
+    .myFonts{
+        font-size: 12px!important;
+    line-height: 17px !important;
+    letter-spacing: 2px!important;
+    }
+     .myMax .myCarousel{
+         margin-top: 95px!important;
+     } 
+     .myMax .myContainer{
+         padding-top: 1rem!important;
+     }
+    .myCont{
+width: 400px!important;
+margin-top: -1910px!important;
+
+    }
+    .myPadding{
+    padding-top: 0.5rem!important;
+    padding-left: 0px!important;
+    padding-right: 0px !important;
+    }
+    .slide1{
+        left: 69px!important;
+    top: 37px!important;
+        width: 35px!important;
+        height: 35px!important;
+        font-size: 14px!important;
+        letter-spacing: 0 !important;
+    }
+    .slide2{
+        left: 140px!important;
+    top: 66px!important;
+    width: 35px!important;
+    height: 35px!important;
+    font-size: 14px!important;
+    letter-spacing: 0 !important;
+    }
+    .slide3{
+    
+       
+        left: 223px!important;
+    top: 63px!important;
+
+    width: 35px!important;
+    height: 35px!important;
+    font-size: 14px!important;
+    letter-spacing: 0 !important; 
+    }
+    
+    .slide4{
+        right: 69px!important;
+    top: 37px!important;
+        width: 35px!important;
+        height: 35px!important;
+        font-size: 14px!important;
+        letter-spacing: 0 !important;
+}
+
+
+ }
+

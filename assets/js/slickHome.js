@@ -116,21 +116,28 @@ $('.slick-carousel').slick({
         },
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1.275,
+          slidesToShow: 1.175,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.09,
+          slidesToScroll:1
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1.08,
           slidesToScroll:1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.055,
           slidesToScroll: 1
         }
       }

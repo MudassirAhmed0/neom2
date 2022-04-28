@@ -86,14 +86,10 @@ const handlePDF=(selected)=>{
     container.classList.remove('hidden')
     const listItems = document.querySelectorAll('.customScroll li')
     listItems.forEach(item=>{
-        let img= item.querySelector('img')
-        img.classList.add('opacity-[.70]')
         item.classList.remove('text-gold')
         item.classList.add('text-[#868786b3]')
     })
-    let img= selected.querySelector('img')
     
-    img.classList.remove('opacity-[.70]')
     selected.classList.remove('text-[#868786b3]')
     selected.classList.add('text-gold')
     let  newUrl = selected.id
