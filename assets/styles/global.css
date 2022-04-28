@@ -594,7 +594,7 @@ input[type=number] {
       }
   }
   @media (max-width: 1024px) {
-    .footer-logo-div {
+    .footer-logo-div  w-[65px] {
       display: none;
     }
   }
