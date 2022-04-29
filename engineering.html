@@ -263,7 +263,10 @@
               src="./assets/images/svg/arrow.svg"
             />
           </span>
-          <div id="divisionDropDown" class="dropdown2 bachalay opacity-1 h-[0]">
+          <div
+            id="divisionDropDown"
+            class="dropdown2 bachalay opacity-1 max-h-[0]"
+          >
             <div
               class="pb-[18px] dropdown2 w-[100%] overflow-hidden h-[auto] normal-case transition-all duration-300 tracking-0 rounded-[15px] flex justify-between opacity-100 flex-col"
             >
@@ -384,7 +387,7 @@
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="700"
-          class="delay-5s text-base w-[60%] mt-[3.5rem] justify-center brown-light flex gap-x-4 items-center"
+          class="delay-5s text-base mt-[3.5rem] justify-center brown-light flex gap-x-4 items-center"
         >
           <a href="./" class="brown-light text-[#868786]">Home</a>
           <span class="brown-light text-gold bookmarkDivider"></span>
@@ -439,7 +442,7 @@
       </section>
       <!-- <section class="myContainer py-[130px] text-black"> -->
       <section
-        class="myContainer sm:py-[130px] text-black md:pt-[130px] pt-[30px] pb-[60px]"
+        class="myContainer sm:py-[130px] p-0-mob text-black md:pt-[130px] pt-[30px] pb-[60px]"
       >
         <h4
           data-aos-once="true"
@@ -575,7 +578,25 @@
         </div>
 
         <!-- key-activities-tabing-for-mob start -->
-        <div class="key-activities-tabing-for-mob mt-[57px] sm:hidden block">
+        <div
+          class="key-activities-tabing-for-mob mt-[57px] sm:hidden block relative"
+        >
+          <span
+            class="absolute top-0 right-0 w-[60px] pointer-events-none h-[60px] scrollerOverlay z-[5] xl:hidden"
+          >
+          </span>
+          <span
+            class="transform translate-x-[-50%] h-[70px] w-[70px] absolute left-[50%] bottom-[190px] block"
+          >
+            <lottie-player
+              src="./assets/lf30_editor_ralegtco.json"
+              background="transparent"
+              speed="1"
+              style="width: 70px; height: 70px"
+              loop
+              autoplay
+            ></lottie-player>
+          </span>
           <!-- <div class="overflow-auto w-[100%]">
 
                         <div class="flex justify-start relative w-[300%] h-[65px]">
@@ -795,7 +816,7 @@
       <div
         class="bg-saint border-t-[6px] border-gold text-[18] flex items-center items-center sm:gap-x-[47px] sm:py-[35px] sm:px-[60px] sm:py-[30px] pb-[30px] pt-[25px] px-[25px] gap-x-[0]"
       >
-        <div class="footer-logo-div w-[65px]">
+        <div class="footer-logo-div w-[65px] hidden xl:block">
           <img
             src="./assets/images/svg/logo-for-footer.svg"
             class="min-w-[220px]"
@@ -933,23 +954,6 @@
     <script src="./assets/js/common.js"></script>
 
     <script src="./assets/js/slick.min.js"></script>
-    <script>
-      $(".slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".slider-nav",
-      });
-      $(".slider-nav").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: false,
-        infinite: false,
-        centerMode: true,
-        focusOnSelect: true,
-      });
-    </script>
+    <script src="./assets/js/functions.js"></script>
   </body>
 </html>

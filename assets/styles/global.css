@@ -565,7 +565,7 @@ input[type=number] {
 
 .show-dropdown {
     opacity: 1 !important;
-    height: auto !important;
+    max-height: 300px !important;
 }
 
 #divisionDropDown {
@@ -594,7 +594,7 @@ input[type=number] {
       }
   }
   @media (max-width: 1024px) {
-    .footer-logo-div  w-[65px] {
+    .footer-logo-div  {
       display: none;
     }
   }
@@ -1093,6 +1093,75 @@ margin-top: -1910px!important;
 
 
  }
+ @media(max-width:460px){
+    .myMax{
+        max-width: 340px!important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .myMax .slide span{
+        width: 100%;
+    }
+    .myFonts{
+        font-size: 12px!important;
+    line-height: 17px !important;
+    letter-spacing: 2px!important;
+    }
+     .myMax .myCarousel{
+         margin-top: 95px!important;
+     } 
+     .myMax .myContainer{
+         padding-top: 1rem!important;
+     }
+    .myCont{
+width: 340px!important;
+margin-top: -1910px!important;
+
+    }
+    .myPadding{
+    padding-top: 0.5rem!important;
+    padding-left: 0px!important;
+    padding-right: 0px !important;
+    }
+    .slide1{
+        left: 55px!important;
+    top: 37px!important;
+        width: 35px!important;
+        height: 35px!important;
+        font-size: 14px!important;
+        letter-spacing: 0 !important;
+    }
+    .slide2{
+        left: 117px!important;
+    top: 66px!important;
+    width: 35px!important;
+    height: 35px!important;
+    font-size: 14px!important;
+    letter-spacing: 0 !important;
+    }
+    .slide3{
+    
+       
+        left: 193px!important;
+    top: 66px!important;
+
+    width: 35px!important;
+    height: 35px!important;
+    font-size: 14px!important;
+    letter-spacing: 0 !important; 
+    }
+    
+    .slide4{
+        right: 55px!important;
+    top: 37px!important;
+        width: 35px!important;
+        height: 35px!important;
+        font-size: 14px!important;
+        letter-spacing: 0 !important;
+}
+
+
+ }
 
  .inline_im {
     display: inline !important;
@@ -1108,6 +1177,20 @@ margin-top: -1910px!important;
 @media (max-width: 768px) {
   .fuelled-div {
     padding: 0;
+  }
+  .p-0-mob{
+      padding-left: 0!important;
+      /* padding-right: 0!important; */
+  }
+  .p-0-mob .slick-list {
+      padding: 0 30px!important;
+  }
+  .p-0-mob .slick-track {
+    display: flex !important;
+  }
+  
+  .p-0-mob .slick-slide {
+    height: auto;
   }
 }
 @media (min-width: 420px) and (max-width: 768px) {
