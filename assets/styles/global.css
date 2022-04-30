@@ -571,6 +571,37 @@ input[type=number] {
 #divisionDropDown {
     overflow: hidden;
 }
+
+.key-activities-tabing-for-mob .slick-arrow.slick-disabled {
+    display: none;
+}
+@media (min-width: 640px) and (max-width: 1100px) {
+    .long-tab-wrapper .text-lg {
+        font-size: 14px;
+        letter-spacing: 2.6px;
+        line-height: 21px;
+        padding: 0 5%;
+    }
+}
+@media (max-width: 1003px) {
+    .long-tab-wrapper {
+      height: 133px !important;
+    }
+  }
+  @media (max-width: 400px) {
+    #heroHeading {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 6px !important;
+    }
+  }
+  @media (max-width: 350px) {
+    #heroHeading {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 4px !important;
+    }
+  }
 /* footer style start */
   div ul li.sitemap-li {
     max-width: 22% !important;
@@ -1091,8 +1122,6 @@ margin-top: -1910px!important;
         letter-spacing: 0 !important;
 }
 
-
- }
  @media(max-width:460px){
     .myMax{
         max-width: 340px!important;
@@ -1162,7 +1191,14 @@ margin-top: -1910px!important;
 
 
  }
-
+ 
+ @media(max-width:400px) {
+    .myFonts{
+        font-size: 11px!important;
+        line-height: 15px !important;
+        letter-spacing: 2px!important;
+    }
+ }
  .inline_im {
     display: inline !important;
 }
@@ -1174,25 +1210,37 @@ margin-top: -1910px!important;
 .homeCarousel .item:hover .chevron-right {
     margin-left: 5px !important;
 }
+/* .p-0-mob .slick-slide {
+    height: 0px!important;
+}
+.p-0-mob .slick-slide.slick-active {
+    height: 100% !important;  
+} */
+.p-0-mob .slick-next, 
+.p-0-mob .slick-prev {
+    width: 60px;
+    height: 60px;
+}
 @media (max-width: 768px) {
   .fuelled-div {
     padding: 0;
-  }
-  .p-0-mob{
-      padding-left: 0!important;
-      /* padding-right: 0!important; */
-  }
-  .p-0-mob .slick-list {
-      padding: 0 30px!important;
-  }
-  .p-0-mob .slick-track {
-    display: flex !important;
-  }
-  
-  .p-0-mob .slick-slide {
-    height: auto;
-  }
 }
+@media (max-width: 640px) {
+    .p-0-mob{
+        padding-left: 0!important;
+        /* padding-right: 0!important; */
+    }
+    .p-0-mob .slick-list {
+        padding: 0 0 0 30px!important;
+    }
+    .p-0-mob .slick-track {
+      display: flex !important;
+    }
+    
+    .p-0-mob .slick-slide {
+      height: auto;
+    }
+  }
 @media (min-width: 420px) and (max-width: 768px) {
   .all-functions-div {
     max-width: 380px;

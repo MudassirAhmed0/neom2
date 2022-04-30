@@ -60,6 +60,8 @@
 
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/aos.css" />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
+    <link rel="stylesheet" href="./assets/styles/service-delivery.css" />
 
     <link rel="stylesheet" href="./assets/styles/slick-carousel.min.css" />
     <link rel="stylesheet" href="./assets/styles/slick-theme.min.css" />
@@ -67,45 +69,6 @@
     <script src="./assets/js/tailwind.js"></script>
     <script src="./assets/js/config.js"></script>
   </head>
-
-  <style>
-    @media (min-width: 641px) and (max-width: 730px) {
-      #secondSection .rightEdge .main-head {
-        letter-spacing: 4px !important;
-      }
-    }
-    @media (max-width: 640px) {
-      .bg-lines-img {
-        display: none;
-      }
-    }
-    .key-activities-tabing-for-mob .tabsHeaderButton span::before {
-      position: static;
-    }
-
-    @media (max-width: 1225px) {
-      .long-tab {
-        position: static !important;
-        width: 33% !important;
-      }
-      .long-tab .tabsHeaderButton span::before {
-        left: 0;
-      }
-      .long-tab1.tabsHeaderButton span::before {
-        left: 0;
-      }
-      .long-tab2 .tabsHeaderButton span::before {
-        left: 0;
-      }
-      .long-tab2 span {
-        line-height: 26px;
-      }
-      .long-tab .inside-div {
-        width: unset;
-        text-align: center;
-      }
-    }
-  </style>
 
   <body>
     <!-- desktop navigation bar -->
@@ -177,14 +140,14 @@
                 <li
                   class="hover:text-gold transition-all duration-300 relative z-5"
                 >
-                  <a href="./service.html" class="brown-light">
+                  <a href="./service-delivery.html" class="brown-light">
                     Service Delivery
                   </a>
                 </li>
                 <li
                   class="hover:text-gold transition-all duration-300 relative z-5"
                 >
-                  <a href="./management.html" class="brown-light">
+                  <a href="./management-office.html" class="brown-light">
                     Strategy Management Office
                   </a>
                 </li>
@@ -246,7 +209,7 @@
         </span>
       </div>
       <ul
-        class="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] mt-[108px] w-[100%]"
+        class="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] pt-[108px] w-[100%]"
       >
         <li
           class="text-[25px] hover:text-gold transition-all duration-300 leading-[70px] tracking-[5px]"
@@ -274,50 +237,50 @@
                 <!-- <img src="./assets/images/brandicons/navBrand.png" alt="navBrand"> -->
               </div>
               <ul class="flex flex-col">
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./governance.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Governance, Risk and Compliance
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./engineering.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Engineering and Architecture
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./response.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Response and Resilience
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./operational.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Industrial Operational Technology
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./service-delivery.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Cybersecurity service delivery
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./management-office.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Strategy Management office (SMO)
                   </a>
@@ -445,7 +408,7 @@
         </div>
       </section>
       <section
-        class="myContainer sm:py-[130px] text-black md:pt-[130px] pt-[30px] pb-[60px]"
+        class="myContainer sm:py-[130px] p-0-mob text-black md:pt-[130px] pt-[30px] pb-[60px]"
       >
         <h4
           data-aos-once="true"
@@ -457,7 +420,7 @@
         </h4>
         <!-- key-activities-tabing-for-desktop start -->
         <div class="mt-[95px] sm:block hidden">
-          <div class="flex justify-between relative border-b-[3px]">
+          <div class="long-tab-wrapper flex justify-between relative border-b-[3px]">
             <div
               data-aos-once="true"
               data-aos="fade-up"
@@ -465,22 +428,22 @@
               onclick="openTab('cyberRiskTab',0)"
               class="long-tab long-tab1 flex flex-col items-center relative z-[5] active top-[3px] gap-y-4 tabsHeaderButton"
             >
-              <img src="./assets/images/svg/iot.svg" alt="Risk" />
-              <span class="text-lg uppercase tracking-[3.6px] text-center pb-4">
+              <img src="./assets/images/svg/data-security.svg" alt="Risk" />
+              <span class="text-lg uppercase tracking-[3.6px] text-center pb-4 tab-span">
                 DELIVERY & GOVERNANCE
               </span>
             </div>
-            <div class="long-tab long-tab2 absolute w-full top-[4px]">
+            <div class="absolute w-full top-[4px]">
               <div
                 data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="700"
                 onclick="openTab('complianceTab',1)"
-                class="inside-div flex flex-col items-center top-[3px] w-[380px] mx-auto gap-y-4 tabsHeaderButton"
+                class="long-tab long-tab2 inside-div flex flex-col items-center top-[3px] w-[380px] mx-auto gap-y-4 tabsHeaderButton"
               >
-                <img src="./assets/images/svg/settings.svg" alt="Compliance" />
-                <span class="text-lg uppercase tracking-[3.6px] pb-4">
+                <img src="./assets/images/svg/check-list.svg" alt="Compliance" />
+                <span class="text-lg uppercase tracking-[3.6px] text-center pb-4 tab-span">
                   IMPLEMENTATION PLAN
                 </span>
               </div>
@@ -493,8 +456,8 @@
               onclick="openTab('thirdPartyTab',2)"
               class="long-tab flex flex-col items-center relative top-[3px] gap-y-4 tabsHeaderButton"
             >
-              <img src="./assets/images/svg/improve.svg" alt="Third Party " />
-              <span class="text-lg uppercase tracking-[3.6px] text-center pb-4">
+              <img src="./assets/images/svg/handshake.svg" alt="Third Party " />
+              <span class="text-lg uppercase tracking-[3.6px] text-center pb-4 tab-span">
                 BUSINESS OPERATION
               </span>
             </div>
@@ -558,7 +521,9 @@
           </div>
         </div>
         <!-- key-activities-tabing-for-mob start -->
-        <div class="key-activities-tabing-for-mob mt-[57px] sm:hidden block">
+        <div class="key-activities-tabing-for-mob mt-[57px] sm:hidden block relative">
+          <span class="absolute top-0 right-0 w-[60px] pointer-events-none h-[60px] scrollerOverlay z-[5] xl:hidden">
+          </span>
           <!-- <div class="flex justify-between  relative border-b-[3px]">
                        
                         <div  data-aos-once="true" data-aos="fade-up"  data-aos-duration="700"onclick="openTab('cyberRiskTab',0)" class="flex  z-[5] items-center relative max-w-[80%] top-[3px] gap-y-4 tabsHeaderButton4">
@@ -608,11 +573,14 @@
               <div
                 class="flex items-center w-[140p x] top-[3px] tabsHeaderButton3"
               >
-                <img
-                  src="./assets/images/svg/compliance.svg"
-                  class="p-[10px] slider-icon-img bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
-                  alt="Compliance"
-                />
+              <div class="slider-icon-img">
+                <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                  <img src="./assets/images/svg/data-security-white.svg" class="w-[100%] max-h-[32px]" alt="data-security" />
+                </div>
+                <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                  <img src="./assets/images/svg/data-security.svg" class="w-[100%] max-h-[32px]" alt="Third Party " />
+                </div>
+              </div>
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -622,11 +590,14 @@
             </div>
             <div class="">
               <div class="flex items-center w-[140p x] tabsHeaderButton3">
-                <img
-                  src="./assets/images/svg/thirdparty.svg"
-                  class="p-[10px] slider-icon-img bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
-                  alt="Third Party "
-                />
+                <div class="slider-icon-img">
+                  <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                    <img src="./assets/images/svg/check-list-white.svg" class="w-[100%] max-h-[32px]" alt="check-list" />
+                  </div>
+                  <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                    <img src="./assets/images/svg/check-list.svg" class="w-[100%] max-h-[32px]" alt="check-list" />
+                  </div>
+                </div>
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -639,11 +610,14 @@
               <div
                 class="flex items-center w-[140p x] top-[3px] z-[5] tabsHeaderButton3"
               >
-                <img
-                  src="./assets/images/svg/risk.svg"
-                  class="p-[10px] slider-icon-img bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]"
-                  alt="Risk"
-                />
+              <div class="slider-icon-img">
+                <div class="active-icon p-[10px] bg-[#B89535] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                  <img src="./assets/images/svg/handshake-white.svg" class="w-[100%] max-h-[32px]" alt="handshake" />
+                </div>
+                <div class="default-icon p-[10px] bg-[#fff] rounded-[100px] min-w-[52px] w-[52px] h-[52px]">
+                  <img src="./assets/images/svg/handshake.svg" class="w-[100%] max-h-[32px]" alt="handshake" />
+                </div>
+              </div>
                 <span
                   class="text-[12px] leading-[16px] tracking-[2.4px] uppercase pl-[10px]"
                 >
@@ -837,23 +811,8 @@
     <script src="./assets/js/common.js"></script>
 
     <script src="./assets/js/slick.min.js"></script>
-    <script>
-      $(".slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".slider-nav",
-      });
-      $(".slider-nav").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: false,
-        infinite: false,
-        centerMode: true,
-        focusOnSelect: true,
-      });
-    </script>
-  </body>
+   
+    <script src="./assets/js/functions.js"></script>
+
+</body>
 </html>

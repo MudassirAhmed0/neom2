@@ -3,6 +3,7 @@ $(".slider-for").slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    adaptiveHeight: true,
     asNavFor: ".slider-nav",
   });
   $(".slider-nav").slick({
@@ -12,5 +13,6 @@ $(".slider-for").slick({
     dots: false,
     infinite: false,
     centerMode: true,
+    adaptiveHeight: true,
     focusOnSelect: true,
   });

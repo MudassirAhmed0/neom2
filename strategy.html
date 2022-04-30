@@ -69,154 +69,6 @@
     <script src="./assets/js/config.js"></script>
   </head>
 
-  <style>
-    .slider-main.relative .my-next.slick-disabled {
-      /* opacity: .3; */
-      display: none !important;
-    }
-
-    .slider-main.relative .my-prev.slick-disabled {
-      /* opacity: .3; */
-      display: none !important;
-    }
-
-    #cyberRiskTab.tab.active {
-      display: flex !important;
-      /* animation: fade 2.5s; */
-      animation: fade 0s;
-    }
-
-    #complianceTab.tab.active {
-      display: flex !important;
-      /* animation: fade 2.5s; */
-      animation: fade 0s;
-    }
-
-    #thirdPartyTab.tab.active {
-      display: flex !important;
-      /* animation: fade 2.5s; */
-      animation: fade 0s;
-    }
-
-    #benchmarking_tab_and_content .tab .four-box,
-    #benchmarking_tab_and_content .tab .prot-div {
-      opacity: 0;
-    }
-
-    #benchmarking_tab_and_content .tab.active .four-box,
-    #benchmarking_tab_and_content .tab.active .prot-div {
-      animation: fade4boxes 1s forwards;
-      animation-delay: 0.5s;
-    }
-
-    @keyframes fade4boxes {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    #benchmarking_tab_and_content .tab .middle-content {
-      opacity: 0;
-    }
-
-    #benchmarking_tab_and_content .tab.active .middle-content {
-      animation: fadeMiddleContent 1s forwards;
-      /* animation-delay: .3s; */
-    }
-
-    .orange-line {
-      position: relative;
-    }
-
-    .orange-line:before {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 87%;
-      background-color: #ebc03f;
-      left: -6px;
-      top: 18px;
-    }
-
-    .orange-line h4 {
-      position: relative;
-    }
-
-    .orange-line h4:before {
-      position: absolute;
-      content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 50px;
-      background-color: #ebc03f;
-      left: -25px;
-      top: 14px;
-    }
-
-    .orange-line h4.last:after {
-      position: absolute;
-      content: "";
-      width: 9px;
-      height: 200px;
-      background-color: #f9f7f2;
-      left: -25px;
-      top: 23px;
-    }
-
-    @keyframes fadeMiddleContent {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    @media (max-width: 370px) {
-      span.tab-title {
-        font-size: 9px;
-      }
-      .bench-tab-for-mob .tabsHeaderButton {
-        row-gap: 10px;
-      }
-      .bench-tab-for-mob .tabsHeaderButton img {
-        width: 30px;
-        height: 30px;
-      }
-      .tabs-for-mob .tabsHeaderButton2 {
-        row-gap: 10px;
-      }
-      .tabs-for-mob .tabsHeaderButton2 img {
-        width: 30px;
-        height: 30px;
-      }
-    }
-    @media (max-width: 640px) {
-      .rightEdge.rightEdge-sm {
-        min-width: 200px;
-      }
-    }
-    @media (max-width: 370px) {
-      .rightEdge.rightEdge-sm {
-        padding-left: 15px;
-      }
-      h5.orange-title {
-        font-size: 16px;
-        line-height: 20px;
-      }
-      h2.main-title,
-      h4.main-title {
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: 3.4px;
-      }
-    }
-  </style>
 
   <body>
     <!-- desktop navigation bar -->
@@ -288,14 +140,14 @@
                 <li
                   class="hover:text-gold transition-all duration-300 relative z-5"
                 >
-                  <a href="./service.html" class="brown-light">
+                  <a href="./service-delivery.html" class="brown-light">
                     Service Delivery
                   </a>
                 </li>
                 <li
                   class="hover:text-gold transition-all duration-300 relative z-5"
                 >
-                  <a href="./management.html" class="brown-light">
+                  <a href="./management-office.html" class="brown-light">
                     Strategy Management Office
                   </a>
                 </li>
@@ -357,7 +209,7 @@
         </span>
       </div>
       <ul
-        class="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] mt-[108px] w-[100%]"
+        class="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] pt-[108px] w-[100%]"
       >
         <li
           class="text-[25px] hover:text-gold transition-all duration-300 leading-[70px] tracking-[5px]"
@@ -385,50 +237,50 @@
                 <!-- <img src="./assets/images/brandicons/navBrand.png" alt="navBrand"> -->
               </div>
               <ul class="flex flex-col">
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./governance.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Governance, Risk and Compliance
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./engineering.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Engineering and Architecture
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./response.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Response and Resilience
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./operational.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Industrial Operational Technology
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./service-delivery.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Cybersecurity service delivery
                   </a>
                 </li>
-                <li class="hover:text-gold transition-all duration-300">
+                <li class="hover:text-gold transition-all duration-300 py-[5px]">
                   <a
                     href="./management-office.html"
-                    class="brown-light text-[12px] leading-[34px] tracking-[2.4px] uppercase"
+                    class="brown-light text-[12px] tracking-[2.4px] uppercase"
                   >
                     Strategy Management office (SMO)
                   </a>
@@ -971,7 +823,7 @@
                     class="flex flex-col items-center relative top-[3px] gap-y-4 w-[160px] mx-auto tabsHeaderButton"
                   >
                     <img
-                      src="./assets/images/svg/governance2.svg"
+                      src="./assets/images/svg/data-security.svg"
                       alt="Compliance"
                     />
                     <span
@@ -1171,7 +1023,7 @@
                 >
                   <div class="absolute top-[450px] middle-content">
                     <img
-                      src="./assets/images/svg/governance2.svg"
+                      src="./assets/images/svg/data-security.svg"
                       alt="Document Icon"
                       class="mx-auto"
                     />
@@ -1286,7 +1138,7 @@
             id="benchmarking_tab_and_content"
           >
             <!-- bench-tab for mob start -->
-            <div class="bench-tab-for-mob w-[100%] sm:hidden block">
+            <div class="bench-tab-for-mob w-[100%] md:hidden block">
               <div
                 class="flex justify-between relative border-b-[3px]"
                 id="alltabs"
@@ -1298,7 +1150,7 @@
                 >
                   <img src="./assets/images/svg/assesment-sm.svg" alt="Risk" />
                   <span
-                    class="tab-title sm:text-lg uppercase tracking-[3.6px] text-center sm:pb-4 pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
+                    class="tab-title  sm:text-lg uppercase tracking-[2.4px] text-center sm:pb-4 pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
                   >
                     strategy
                   </span>
@@ -1309,11 +1161,11 @@
                     class="flex flex-col items-center relative top-[3px] sm:gap-y-4 w-[160px] mx-auto tabsHeaderButton gap-y-[30px]"
                   >
                     <img
-                      src="./assets/images/svg/governance2.svg"
+                      src="./assets/images/svg/data-security.svg"
                       alt="Compliance"
                     />
                     <span
-                      class="tab-title sm:text-lg uppercase tracking-[3.6px] sm:pb-4 mt-[-1px] pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
+                      class="tab-title sm:text-lg uppercase tracking-[2.4px] sm:pb-4 mt-[-1px] pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
                     >
                       governance
                     </span>
@@ -1325,7 +1177,7 @@
                 >
                   <img src="./assets/images/svg/operation.svg" alt="Report" />
                   <span
-                    class="tab-title sm:text-lg uppercase tracking-[3.6px] sm:pb-4 pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
+                    class="tab-title sm:text-lg uppercase tracking-[2.4px] sm:pb-4 pb-[20px] text-[12px] leading-[28px] tracking-[2.4px]"
                   >
                     operations
                   </span>
@@ -2293,10 +2145,10 @@
     <!-- implimentation plan seciton -->
     <section class="bg-light">
       <div
-        class="rightEdge rightEdge-sm ml-auto rightEdgeCarousel w-[100%] sm:pl-[60px] pl-[30px]"
+        class="rightEdge rightEdge-sm ml-auto rightEdgeCarousel w-[100%] sm:pl-[30px] md:pl-[60px] pl-[30px]"
       >
         <div
-          class="sm:pt-[130px] pb-[8px] flex lg:flex-row flex-col justify-between group pt-[60px]"
+          class="sm:pt-[50px] md:pt-[130px] pb-[8px] flex lg:flex-row flex-col justify-between group pt-[60px]"
         >
           <div class="sm:w-[70%] img_container w-[100%]">
             <h5
@@ -2305,7 +2157,7 @@
               EXPLORE THE THREE WAVES ARE
             </h5>
             <h2
-              class="main-title sm:text-[40px] sm:pt-[30px] sm:pb-[21px] sm:leading-[35px] sm:tracking-[8px] text-[32px] leading-[56px] tracking-[6.4px] pt-[20px] pb-[15px]"
+              class="main-title sm:text-[40px] sm:pt-[30px] sm:pb-[21px] sm:leading-[45px] sm:tracking-[8px] text-[32px] leading-[56px] tracking-[6.4px] pt-[20px] pb-[15px]"
             >
               IMPLEMENTATION PLAN
             </h2>
@@ -2328,7 +2180,7 @@
         </div>
 
         <!-- for desktop start -->
-        <div class="slider-main relative md:block hidden">
+        <div class="slider-main slider-main-for-desktop relative">
           <div
             class="arrows-div absolute top-[180px] right-[80px] h-[152px] flex justify-around items-center flex-col"
           >
@@ -2556,7 +2408,7 @@
         <!-- for desktop end -->
 
         <!-- for mobile start -->
-        <div class="slider-main relative pr-[30px] md:hidden block">
+        <div class="slider-main slider-main-for-mob relative pr-[30px]">
           <!-- <div
                     class="arrows-div absolute top-[180px] right-[80px] h-[152px] flex justify-around items-center flex-col">
                     <div class="w-[50px] z-[10] h-[50px] transform rotate-[-90deg]   cursor-pointer my-next">
@@ -2569,7 +2421,7 @@
                     </div>
                 </div> -->
 
-          <div class="single-ite m single">
+          <div class="single-ite m single single-slider-item-main-div">
             <!-- slide 1 -->
             <div
               class="single-slider-item pt-[65px] pb-[13px] flex flex-col items-center"
@@ -2711,7 +2563,7 @@
               <div
                 class="flex flex-wrap gap-x-4 gap-y-4 w-[100%] flex-col mt-[0]"
               >
-                <p class="brown-light text-[20px] leading-[30px] max-w-[653px]">
+                <p class="paragraph brown-light text-[20px] leading-[30px] max-w-[653px]">
                   The Propel wave is focused on building on the foundations in
                   Wave 1 and investing in research, development and innovation,
                   for governing and managing cybersecurity operations. NEOM will
@@ -2770,7 +2622,7 @@
               <div
                 class="flex flex-wrap gap-x-4 gap-y-4 w-[100%] flex-col mt-[0]"
               >
-                <p class="brown-light text-[20px] leading-[30px] max-w-[653px]">
+                <p class="paragraph brown-light text-[20px] leading-[30px] max-w-[653px]">
                   The Excel wave continues the momentum from the previous wave
                   and leverages state of the art legislation to ensure safety,
                   security and privacy are woven into the fabric of the NEOM
@@ -2793,7 +2645,7 @@
 
     <section class="bg-light">
       <div class="myContainer w-[100%]">
-        <section class="md:py-[130px] text-black pt-[55px] pb-[65px]">
+        <section class="md:py-[130px] md:pb-[0] text-black pt-[55px] pb-[65px]">
           <h5
             class="brown-light text-[16px] tracking-[3px] text-[#C19333] uppercase cursor-pointer text-center"
           >
@@ -2811,7 +2663,7 @@
             NEOM cybersecurity strategy.
           </p>
           <p
-            class="brown-light text-[20px] leading-[25px] text-center pt-[25px] sm:mb-[60px] brown-light mb-[0]"
+            class="brown-light text-[20px] leading-[25px] text-center pt-[25px] brown-light mb-[0]"
           >
             The Governance Model includes 3 key areas
           </p>
@@ -2825,7 +2677,7 @@
         <div class="tabs-for-mob flex justify-between border-b-[3px]">
           <div
             onclick="openTab2('securityAndFramework',0)"
-            class="flex flex-col items-center relative active top-[3px] gap-y-4 tabsHeaderButton2"
+            class="flex flex-col items-center relative active top-[3px] gap-y-4 tabsHeaderButton2 tabing"
           >
             <img
               src="./assets/images/svg/exam-board.svg"
@@ -2833,7 +2685,7 @@
               alt="Risk"
             />
             <span
-              class="tab-title sm:text-lg uppercase tracking-[3.6px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
+              class="tab-title brown-regular sm:text-lg uppercase tracking-[2.4px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
             >
               strategy & framework
             </span>
@@ -2841,7 +2693,7 @@
 
           <div
             onclick="openTab2('complianceTab2',1)"
-            class="flex flex-col items-center relative top-[3px] gap-y-4 tabsHeaderButton2"
+            class="flex flex-col items-center relative top-[3px] gap-y-4 tabsHeaderButton2 tabing"
           >
             <img
               src="./assets/images/svg/lock.svg"
@@ -2849,7 +2701,7 @@
               alt="Compliance"
             />
             <span
-              class="tab-title sm:text-lg uppercase tracking-[3.6px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
+              class="tab-title brown-regular sm:text-lg uppercase tracking-[2.4px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
             >
               compliance
             </span>
@@ -2857,7 +2709,7 @@
 
           <div
             onclick="openTab2('situationAwareness',2)"
-            class="flex flex-col items-center relative top-[3px] gap-y-4 tabsHeaderButton2"
+            class="flex flex-col items-center relative top-[3px] gap-y-4 tabsHeaderButton2 tabing"
           >
             <img
               src="./assets/images/svg/bulb.svg"
@@ -2865,7 +2717,7 @@
               alt="Third Party "
             />
             <span
-              class="tab-title sm:text-lg uppercase tracking-[3.6px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
+              class="tab-title brown-regular sm:text-lg uppercase tracking-[2.4px] text-center pb-[24px] text-[12px] leading-[16px] tracking-[2.4px]"
             >
               situational awareness
             </span>
@@ -2876,9 +2728,9 @@
 
     <section class="bg-light">
       <div class="myContainer w-[100%]">
-        <section class="md:py-[130px] text-black pt-[55px] pb-[65px]">
+        <section class="md:pt-[60px] md:pb-[130px] text-black pt-[55px] pb-[65px]">
           <div class="sm:mt-[45px] w-[100%] governance-model-tab mt-[5px]">
-            <div class="myContainer w-[100%] tab-div sm:block hidden">
+            <div class="myContainer w-[100%] tab-div px-[0] sm:block hidden">
               <div class="flex justify-between border-b-[3px]">
                 <div
                   onclick="openTab2('securityAndFramework',0)"
@@ -2906,7 +2758,7 @@
                     alt="Compliance"
                   />
                   <span
-                    class="sm:text-lg uppercase tracking-[3.6px] pb-4 text-[12px] leading-[16px] tracking-[2.4px]"
+                    class="sm:text-lg uppercase tracking-[3.6px] text-center pb-4 text-[12px] leading-[16px] tracking-[2.4px]"
                   >
                     compliance
                   </span>
@@ -2922,7 +2774,7 @@
                     alt="Third Party "
                   />
                   <span
-                    class="sm:text-lg uppercase tracking-[3.6px] pb-4 text-[12px] leading-[16px] tracking-[2.4px]"
+                    class="sm:text-lg uppercase tracking-[3.6px] text-center pb-4 text-[12px] leading-[16px] tracking-[2.4px]"
                   >
                     situational awareness
                   </span>
@@ -3379,28 +3231,9 @@
     <script src="./assets/js/lottie-interactivity.min.js"></script>
     <script src="./assets/js/lottie-strategy.js"></script>
     <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/strategy.js"></script>
 
     <script src="./assets/js/slick.min.js"></script>
-    <script>
-      $(".slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: false,
-        infinite: false,
-        fade: true,
-        asNavFor: ".slider-nav",
-      });
-      $(".slider-nav").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: false,
-        arrows: false,
-        infinite: false,
-        centerMode: true,
-        focusOnSelect: true,
-      });
-    </script>
+   
   </body>
 </html>
