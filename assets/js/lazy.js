@@ -1,5 +1,5 @@
-$(function() {
-    $('.lazy').lazy({
-        placeholder: "./assets/images/placeholder.jpeg"
-    });
-});
+// $(function() {
+//     $('.lazy').lazy({
+//         placeholder: "./assets/images/placeholder.jpeg"
+//     });
+// });
