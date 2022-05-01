@@ -17,7 +17,12 @@
   .slider-icon-img .active-icon {
     display: none;
   }
-
+.h-715{
+  height: 715px!important;
+}
+.h-582{
+  height: 582px!important;
+}
   .slick-current.slick-center .slider-icon-img .default-icon {
     display: none;
   }

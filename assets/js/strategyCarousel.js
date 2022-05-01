@@ -4,8 +4,9 @@ var slideNumber = 1
 const slide = (slideNum) => {
     slideNumber = slideNum ? slideNum : slideNumber
     const nav = document.querySelector('.slideNav')
-    const balls = document.querySelectorAll('.nav-ball')
+    const balls = window.innerWidth > 768 ?  document.querySelectorAll('.nav-ball') : document.querySelectorAll('.nav-ball-mob')
     const slides = document.querySelectorAll('.slide')
+    
     clearInterval(myInterval)
     slides.forEach(slide => {
         slide.classList.add('hidden')

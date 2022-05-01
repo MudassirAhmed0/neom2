@@ -537,7 +537,15 @@ input[type=number] {
     transform: translateY(-10px);
     box-shadow: 0 10px 0 #fff;
 }
-
+.h-1050{
+    height: 1050px!important;
+}
+.h-820{
+    height: 725px!important;
+}
+.leftcenter{
+    left: calc(50% + 15px)
+}
 #toggle::after, #toggle_home::after {
     content: "";
     position: absolute;

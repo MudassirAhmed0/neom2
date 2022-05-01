@@ -15,4 +15,6 @@ $(".slider-for").slick({
     centerMode: true,
     adaptiveHeight: true,
     focusOnSelect: true,
+     
   });
+ 

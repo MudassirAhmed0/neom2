@@ -153,7 +153,21 @@
 .line-1 {
     position: relative;
 }
-
+.h-1065{
+  height: 1065px!important;
+}
+.h-885{
+  height: 885px!important;
+}
+.h-720{
+  height: 720px!important;
+}
+.h-940{
+  height: 940px!important;
+}
+.h-820{
+  height: 820px!important;
+}
 .line-1:before {
     position: absolute;
     content: "";
