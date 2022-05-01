@@ -1,4 +1,5 @@
- // $(document).ready(function () {
+
+// $(document).ready(function () {
         //     jQuery(".quesion-dropdown").fadeOut();
         // });
 
@@ -32,40 +33,47 @@
         // form submit funciton
         const submitForm = (event) => {
             event.preventDefault();
-            let deapartmentName = document.getElementById("deapartmentName").value;
-            let fullName = document.getElementById("fullName").value;
-            let mobile = document.getElementById("mobile").value;
-            let email = document.getElementById("email").value;
-            let Summary = document.getElementById("Summary").value;
+            let deapartmentName = document.getElementById("deapartmentName");
+            let fullName = document.getElementById("fullName");
+            let mobile = document.getElementById("mobile");
+            let email = document.getElementById("email");
+            let Summary = document.getElementById("Summary");
 
-            if (deapartmentName == "") {
+            if (deapartmentName.value == "") {
                 document.getElementById("emptySubject").classList.add("show");
+                deapartmentName.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+
             }
-            if (deapartmentName !== "") {
+            if (deapartmentName.value !== "") {
                 document.getElementById("emptySubject").classList.remove("show");
             }
-            if (fullName == "") {
+            if (fullName.value == "") {
                 document.getElementById("emptyName").classList.add("show");
+                deapartmentName.value !== '' && fullName.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
             }
-            if (fullName !== "") {
+            if (fullName.value !== "") {
                 document.getElementById("emptyName").classList.remove("show");
             }
-            if (mobile == "") {
+            if (mobile.value == "") {
                 document.getElementById("emptyNumber").classList.add("show");
+                deapartmentName.value !== '' &&  fullName.value !== '' &&  mobile.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
             }
-            if (mobile !== "") {
+            if (mobile.value !== "") {
                 document.getElementById("emptyNumber").classList.remove("show");
             }
-            if (email == "") {
+            if (email.value == "") {
                 document.getElementById("emptyEmail").classList.add("show");
+                deapartmentName.value !== '' &&  fullName.value !== '' && mobile.value !== ''  && email.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
             }
-            if (email !== "") {
+            if (email.value !== "") {
                 document.getElementById("emptyEmail").classList.remove("show");
             }
-            if (Summary == "") {
+            if (Summary.value == "") {
                 document.getElementById("emptyMessage").classList.add("show");
+                deapartmentName.value !== '' &&  fullName.value !== '' && mobile.value !== ''  && email.value !== ''  && Summary.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+                
             }
-            if (Summary !== "") {
+            if (Summary.value !== "") {
                 document.getElementById("emptyMessage").classList.remove("show");
             }
 
