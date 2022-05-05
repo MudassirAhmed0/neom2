@@ -168,7 +168,7 @@
     </nav>
     <!-- mobile navigation bar start -->
     <nav
-      class="mobile-nav h-[100 vh] left-[50%] z-[31] transform brown-light text-[15px] translate-x-[-50%] myContainer flex justify-start absolute items-center flex-col top-[0]"
+      class="mobile-nav mobile-navv h-[100 vh] left-[50%] z-[31] transform brown-light text-[15px] translate-x-[-50%] myContainer flex justify-start absolute items-center flex-col top-[0]"
     >
       <div class="w-full h-full absolute top-0 left-0">
         <span
@@ -193,7 +193,7 @@
     </nav>
     <div
       id="menu_options"
-      class="mobile-nav myContainer opacity-0 fixed z-[30] translate-y-[-100vh]"
+      class="mobile-nav pointer-events-none myContainer opacity-0 fixed z-[30] translate-y-[-100vh]"
     >
       <div class="w-full h-full absolute top-0 left-0 z-[-1]">
         <span
@@ -770,12 +770,29 @@
           data-aos-once="true"
           data-aos="fade-up"
           data-aos-duration="700"
-          class="sm:text-[40px] sm:tracking-[8px] mb-[30px] text-center text-[28px] tracking-[5.6px] leading-[56px]"
+          class="sm:text-[40px] hidden md:block sm:tracking-[8px] mb-[30px] text-center text-[28px] tracking-[5.6px] leading-[56px]"
         >
-          FOUR CORE DIVISIONS WITHIN <br />
+          SIX CORE FUNCTIONS WITHIN <br />
           <span class="text-gold">CYBERSECURITY SECTOR</span>
         </h4>
+        <h4
+          id="bighead1"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          class="text-[21px] md:hidden text-center tracking-[4.2px] leading-[38px]"
+        >
+          SIX CORE FUNCTIONS WITHIN CYBERSECURITY SECTOR
+        </h4>
         <img
+          src="./assets/images/svg/logoHa.svg"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          alt=""
+          class="mt-[40px]"
+        />
+        <!--    <img
           class="relative top-[36px] sm:pb-[0] pb-[60px]"
           src="./assets/images/svg/logoHa.svg"
           alt="logoWithOutTitle"
@@ -895,6 +912,190 @@
                 alt="Arrow"
             /></a>
           </div>
+        </div> -->
+        <div
+          class="all-functions-div md:mt-[162px] relative md:mb-[151px] flex md:flex-row md:px-10 w-full justify-between mt-[40px] md:[33px] mb-[30px] flex-col"
+        >
+          <img
+            src="./assets/images/home/aboutShield.svg"
+            class="sheild-svg hidden xl:block absolute left-[50%] translate-x-[-50%] translate-y-[-20%]"
+          />
+          <img
+            src="./assets/images/svg/logoHa.svg"
+            class="sheild-svg hidden xl:block absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+          />
+          <ul class="flex flex-col md:gap-y-[72px] gap-y-[60px]">
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./service.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/security.svg"
+                  alt="Engineering"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Security <br />
+                Service Delivery
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./engineering.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/engineering.svg"
+                  alt="Engineering"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Engineering and <br />
+                Architecture
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./governance.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/caution.svg"
+                  alt="Governance"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Governance, Risk <br />
+                and Compliance
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-y-[72px] md:mt-[0] mt-[60px]">
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./operational.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/circuit.svg"
+                  alt="Technology"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Operational and <br />
+                Technology
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./response.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/fast-time.svg"
+                  alt="Engineering"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Response and <br />
+                Resilience
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+            <li
+              class="flex relative gap-x-4 w-full sm:w-[336px] items-center group transition-all duration-300 cursor-pointer"
+            >
+              <a
+                href="./management.html"
+                class="w-full h-full absolute top-0 left-0"
+              ></a>
+              <span
+                class="rounded-full bg-[#86878612] w-[67px] h-[67px] flex justify-center items-center"
+              >
+                <img
+                  class="w-[33px] h-[33px]"
+                  src="./assets/images/about/check-list.svg"
+                  alt="Governance"
+                />
+              </span>
+              <span
+                class="brown-regular md:text-lg tracking-[0.9px] leading-[28px] text-[18px]"
+              >
+                Strategy Management <br />
+                Office
+              </span>
+              <img
+                class="chevron-right-icon ml-auto transition-all duration-300 transform group-hover:translate-x-[16px]"
+                src="./assets/images/svg/chevron-right-black.svg"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -952,14 +1153,14 @@
 
     <footer>
       <div
-        class="bg-saint border-t-[6px] border-gold text-[18] flex items-center items-center sm:gap-x-[47px] sm:py-[35px] sm:px-[60px] sm:py-[30px] pb-[30px] pt-[25px] px-[25px] gap-x-[0]"
+        class="bg-saint justify-center border-t-[6px] border-gold text-[18] flex items-center items-center sm:gap-x-[47px] sm:py-[35px] sm:px-[60px] sm:py-[30px] pb-[30px] pt-[25px] px-[25px] gap-x-[0]"
       >
-        <div class="footer-logo-div w-[65px] hidden xl:block">
+        <a href="./" class="footer-logo-div w-[65px] hidden xl:block">
           <img
             src="./assets/images/svg/logo-for-footer.svg"
             class="min-w-[220px]"
           />
-        </div>
+        </a>
 
         <div class="footer-functionss-div">
           <h4

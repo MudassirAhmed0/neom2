@@ -22,12 +22,18 @@ toggle.onclick = function () {
     toggle.classList.toggle("active");
     if (isMenuHide == true) {
         document.getElementById("menu_options").classList.add("show-menu");
-        document.querySelector('.mobile-nav').style.position = 'fixed'
+        document.querySelector('.mobile-nav').classList.add('fixed')
+        document.querySelector('.mobile-nav').classList.remove('absolute')
+        document.querySelector('.mobile-nav').classList.contains('bg-black') &&  document.querySelector('.mobile-nav').classList.remove('bg-black')
+
         isMenuHide = false;
     } else if (isMenuHide == false) {
         document.getElementById("menu_options").classList.remove("show-menu");
-        document.querySelector('.mobile-nav').style.position = 'absolute'
+        document.querySelector('.mobile-nav').classList.add('absolute')
+        document.querySelector('.mobile-nav').classList.remove('fixed')
+        
         isMenuHide = true;
+
     }
 }
 openDropdownMenu = () => {
